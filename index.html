@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">E Commerce.com</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="login_signup.html">Login/Signup</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Welcome to E Commerce.com</h1>
+            <p>Your one-stop shop for all your needs</p>
+            <a href="products.html" class="btn">Shop Now</a>
+        </div>
+    </section>
+
+    <section id="products" class="products">
+        <h2>Our Products</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="ecomarce.jpg" alt="Product 1">
+                <h3>Product 1</h3>
+                <p>$25.00</p>
+                <button class="btn" onclick="addToCart('Product 1')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="e commarce.jpg" alt="Product 2">
+                <h3>Product 2</h3>
+                <p>$30.00</p>
+                <button class="btn" onclick="addToCart('Product 2')">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <img src="e comarce.jpg" alt="Product 3">
+                <h3>Product 3</h3>
+                <p>$45.00</p>
+                <button class="btn" onclick="addToCart('Product 3')">Add to Cart</button>
+            </div>
+            <!-- Add 12 more products here -->
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Us</h2>
+        <p>We are committed to providing the best online shopping experience with high-quality products and services.</p>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Contact Us</h2>
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <textarea placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 E Commerce.com. All rights reserved.</p>
+    </footer>
+
+    <script>
+        function addToCart(productName) {
+            alert(productName + " has been added to your cart!");
+        }
+    </script>
+</body>
+</html>
